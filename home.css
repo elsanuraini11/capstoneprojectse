@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+body {
+    font-family: poppins;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    align-items: center;
+}
+.logo {
+    font-size: 25px;
+    font-weight: 600;
+}
+.navbar a{
+    font-size: 18px;
+    color: rgb(243, 214, 176);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px;
+   
+}
+.navbar {
+    padding-right: 60px;
+}
+.container1{
+    width:100%;
+    height :100vh;
+    display : flex;
+    align-items: center;
+    padding : 70px 10% 0;
+    justify-content: space-between;
+}
+.potowhy img {
+   align: left;
+}
+.why {
+    max-width: 500px;
+}
+.why h1 {
+    font-size: 50px;
+    color: black;
+
+}
+.why h2 {
+    font-size: 20px;
+    color: black;
+}
+.why p {
+    font-size: 20px;
+    color: black;
+    width: 500px;
+}
+.ourservice img {
+    width: 300px;
+    background-color: white;
+    text-align: center;
+    display: inline;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.dentalcheckup img {
+    max-width: 100%;
+    height: auto;
+}
+.toothcleaning img {
+    max-width: 100%;
+    height: auto;
+}
+.cavityfillings img {
+    max-width: 100%;
+    height: auto;
+}
+.toothextraction img {
+    max-width: 100%;
+    height: auto;
+}
+.caption {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.service {
+    text-align: center;
+    font-weight: 800;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.testimonial {
+    text-align: center;
+    font-weight: 800;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.btn a {
+    position: relative;
+    width: 180px;
+    height: 48px;
+    display: inline-flex;
+    background:#2a9d8f;
+    border-radius: 40px;
+    font-size: 19px;
+    color: #f2e9e4;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    text-align: center;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+}
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
