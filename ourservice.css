@@ -58,20 +58,22 @@ body {
     color: black;
     width: 500px;
 }
-.dental-checkup {
-    max-width: 75%;
-    justify-content: space-between;
+.our-services {
     align-items: center;
-    padding: 20px;
     display: flex;
-    flex-direction: column;
+    padding-left: 200px;
+    padding-right: 200px;
+    justify-content: space-between;
+    
 }
-.dental-checkup img {
+.our-services-gambar img {
+    text-align: right;
+    flex: 1;
     width: 300px;
     border-radius: 10%;
-    align : left;
-    float: left;
 }
-.dental-checkup p {
-    text-align: center;
+.our-services-text {
+    flex: 2;
+    padding-left: 20px;
+    line-height: 1.5;
 }
