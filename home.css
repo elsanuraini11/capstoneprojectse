@@ -6,6 +6,11 @@
 }
 body {
     font-family: poppins;
+    margin: 0;
+     padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 .header {
     position: fixed;
@@ -33,6 +38,25 @@ body {
 }
 .navbar {
     padding-right: 60px;
+}
+.home h1 {
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    font-size: 50;
+}
+.home {
+    font-size: 20px; 
+    text-align: center;
+    padding-top: 200px;
+    padding-right: 350px;
+    padding-left: 350px;
+   
+}
+.home p {
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
 }
 .container1{
     width:100%;
@@ -62,30 +86,21 @@ body {
     color: black;
     width: 500px;
 }
-.ourservice img {
-    width: 300px;
+.ourservice {
     background-color: white;
-    text-align: center;
-    display: inline;
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
-    row-gap: 20px;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
-.dentalcheckup img {
-    max-width: 100%;
-    height: auto;
+.gambar {
+flex : 0 0 auto;
+margin-right: 10px;
 }
-.toothcleaning img {
-    max-width: 100%;
-    height: auto;
-}
-.cavityfillings img {
-    max-width: 100%;
-    height: auto;
-}
-.toothextraction img {
-    max-width: 100%;
+.gambar img {
+    width: 200px;
     height: auto;
 }
 .caption {
@@ -126,6 +141,11 @@ body {
     font-weight: 800;
     align-items: center;
     justify-content: center;
+}
+.btn {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 .form-container {
     max-width: 600px;
@@ -172,4 +192,33 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+.btn-consult a {
+    position: relative;
+    width: 180px;
+    height: 48px;
+    display: inline-flex;
+    background:#2a9d8f;
+    border-radius: 40px;
+    font-size: 19px;
+    color: #f2e9e4;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    text-align: center;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+}
+.btn-consult {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer {
+    background-color: ;
 }
