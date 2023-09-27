@@ -1,0 +1,34 @@
+.meet-section {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column; /* Change to column */
+    align-items: center;
+    padding: 70px 10%;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.meet-container {
+    display: block; /* Change from "display: flex" to "display: block" */
+    margin-bottom: 20px; /* Add some margin between each section */
+}
+
+.potodr {
+    box-align: left;
+}
+
+.our-services-text {
+    max-width: 500px;
+}
+
+.our-services-text h3 {
+    font-size: 30px;
+    color: black;
+}
+
+.our-services-text p {
+    font-size: 15px;
+    color: black;
+    width: 500px;
+}
