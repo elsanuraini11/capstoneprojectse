@@ -95,209 +95,21 @@ header {
 
 
 .navbar .login-btn {
-    border: none;
-    outline: none;
-    background: #17206D;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 10px 18px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.15s ease;
-}
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 20px;
+        background: #17206D;
+        border-radius: 25px;
+        border-color: #17206D;
+        border: 2px solid #17206D;
+        transition: border-color 0.3s;
+    }
 
 .navbar .login-btn:hover {
-    background: #17206d75;
-}
-
-/* pop up login */
-.form-popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: 10;
-    width: 100%;
-    opacity: 0;
-    pointer-events: none;
-    max-width: 720px;
-    background: #fff;
-    border: 2px solid #17206D;
-    transform: translate(-50%, -70%);
-}
-
-.show-popup .form-popup {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translate(-50%, -50%);
-    transition: transform 0.3s ease, opacity 0.1s;
-}
-
-.form-popup .close-btn {
-    position: absolute;
-    top: 12px;
-    right: 12px;
+    background-color: transparent;
+    border-color: #17206D;
     color: #17206D;
-    cursor: pointer;
-}
-
-.blur-bg-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    pointer-events: none;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    transition: 0.1s ease;
-}
-
-.show-popup .blur-bg-overlay {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.form-popup .form-box {
-    display: flex;
-}
-
-.form-box .form-details {
-    width: 100%;
-    color: #fff;
-    max-width: 330px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.login .form-details {
-    padding: 0 40px;
-    background: url("../images/denture fiting.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-.signup .form-details {
-    padding: 0 20px;
-    background: url("../images/tooth cleaning.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-.form-box .form-content {
-    width: 100%;
-    padding: 35px;
-}
-
-.form-box h2 {
-    text-align: center;
-    margin-bottom: 29px;
-}
-
-form .input-field {
-    position: relative;
-    height: 50px;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.input-field input {
-    height: 100%;
-    width: 100%;
-    background: none;
-    outline: none;
-    font-size: 0.95rem;
-    padding: 0 15px;
-    border: 1px solid #717171;
-    border-radius: 3px;
-}
-
-.input-field input:focus {
-    border: 1px solid #17206D;
-}
-
-.input-field label {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-    color: #4a4646;
-    pointer-events: none;
-    transition: 0.2s ease;
-}
-
-.input-field input:is(:focus, :valid) {
-    padding: 16px 15px 0;
-}
-
-.input-field input:is(:focus, :valid)~label {
-    transform: translateY(-120%);
-    color: #17206D;
-    font-size: 0.75rem;
-}
-
-.form-box a {
-    color: #17206D;
-    text-decoration: none;
-}
-
-.form-box a:hover {
-    text-decoration: underline;
-}
-
-form :where(.forgot-pass-link, .policy-text) {
-    display: inline-flex;
-    margin-top: 13px;
-    font-size: 0.95rem;
-}
-
-form button {
-    width: 100%;
-    color: #fff;
-    border: none;
-    outline: none;
-    padding: 14px 0;
-    font-size: 1rem;
-    font-weight: 500;
-    border-radius: 3px;
-    cursor: pointer;
-    margin: 25px 0;
-    background: #17206D;
-    transition: 0.2s ease;
-}
-
-form button:hover {
-    background: #17206d75;
-}
-
-.form-content .bottom-link {
-    text-align: center;
-}
-
-.form-popup .signup,
-.form-popup.show-signup .login {
-    display: none;
-}
-
-.form-popup.show-signup .signup {
-    display: flex;
-}
-
-.signup .policy-text {
-    display: flex;
-    margin-top: 14px;
-    align-items: center;
-}
-
-.signup .policy-text input {
-    width: 14px;
-    height: 14px;
-    margin-right: 7px;
+    
 }
 
 /* Main Content */
@@ -332,7 +144,7 @@ form button:hover {
 .home {
     font-size: 20px;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 180px;
     padding-right: 300px;
     padding-left: 300px;
     background-color: #EAF4FB;
@@ -343,6 +155,7 @@ form button:hover {
     font-size: 15px;
     text-align: center;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .container1 {
@@ -379,6 +192,7 @@ form button:hover {
     font-size: 15px;
     color: black;
     width: 500px;
+    padding-bottom: 30px;
 }
 
 /* service */
@@ -420,155 +234,127 @@ form button:hover {
     justify-content: center;
 }
 
-/* slide service */
 
-.containerslide {
-    max-width: 1200px;
-    width: 70%;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .slider-wrapper {
-    position: relative;
-  }
-  
-  .slider-wrapper .slide-button {
-    position: absolute;
-    top: 50%;
-    outline: none;
-    border: none;
-    height: 50px;
-    width: 50px;
-    z-index: 5;
-    color: #fff;
-    display: flex;
-    cursor: pointer;
-    font-size: 2.2rem;
-    background: #000;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .slider-wrapper .slide-button:hover {
-    background: #404040;
-  }
-  
-  .slider-wrapper .slide-button#prev-slide {
-    left: -25px;
-    display: none;
-  }
-  
-  .slider-wrapper .slide-button#next-slide {
-    right: -25px;
-  }
-  
-  .slider-wrapper .image-list {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    gap: 30px;
-    font-size: 0;
-    list-style: none;
-    margin-bottom: 30px;
-    overflow-x: auto;
-    scrollbar-width: none;
-  }
-  
-  .slider-wrapper .image-list::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .slider-wrapper .image-list .image-item {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .container .slider-scrollbar {
-    height: 24px;
+/* client review */
+.review-container {
     width: 100%;
+    height: 100vh;
+    color: white;
     display: flex;
     align-items: center;
-  }
-  
-  .slider-scrollbar .scrollbar-track {
-    background: #ccc;
-    width: 100%;
-    height: 2px;
-    display: flex;
-    align-items: center;
-    border-radius: 4px;
-    position: relative;
-  }
-  
-  .slider-scrollbar:hover .scrollbar-track {
-    height: 4px;
-  }
-  
-  .slider-scrollbar .scrollbar-thumb {
-    position: absolute;
-    background: #000;
-    top: 0;
-    bottom: 0;
-    width: 50%;
-    height: 100%;
-    cursor: grab;
-    border-radius: inherit;
-  }
-  
-  .slider-scrollbar .scrollbar-thumb:active {
-    cursor: grabbing;
-    height: 8px;
-    top: -2px;
-  }
-  
-  .slider-scrollbar .scrollbar-thumb::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -10px;
-    bottom: -10px;
-  }
+    flex-direction: column;
+    justify-content: center;
+    background-color: #090921;
+    padding-bottom: 150px;
+}
 
-/* testi */
-.testimonial {
+.review-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
-    font-weight: 800;
+}
+
+.description {
+    text-align: center;
+    width: 43%;
+}
+
+.clientImage {
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    width: 100%;
-    justify-content: center;
 }
 
-/* faq */
-.faq-section {
-    display: grid;
-    grid-gap: 20px;
+.clientImage span {
+    margin-left: 10px;
+}
+
+.clientImage img {
+    width: 40px;
+}
+
+.reviewSection {
+    padding: 1rem;
+    display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.faq-column {
-    flex: 1;
-    width: 45%;
-    margin: 10px;
+.reviewItem {
+    width: 300px;
     padding: 10px;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #10102a;
+    border: 1px solid #10102a;
+    transition: all .2s linear;
 }
 
-.faq-item {
-    margin-bottom: 20px;
+.reviewItem:hover {
+    border-color: #7489C6;
+    transform: scale(1.01);
+    background-color: #090921;
+    box-shadow: 0 0px 5px 0px #cbc0c0;
 }
 
-.faq-box {
-    background-color: #BBBEFF;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 25px;
-
+.top {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.top ul {
+    display: flex;
+    list-style: none;
+}
+
+.top ul li {
+    padding-left: 4px;
+}
+
+article p {
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    font-family: system-ui;
+}
+
+
+@media screen and (max-width:700px) {
+    .container {
+        height: auto;
+    }
+
+    .description {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .reviewSection {
+        padding: 0;
+    }
+
+    .reviewItem {
+        width: 100%;
+    }
+
+    .clientImage {
+        margin-bottom: 0.6rem;
+    }
+
+    .top {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
 
 .btn a {
     position: relative;
@@ -597,130 +383,8 @@ form button:hover {
     width: 100%;
 }
 
-.form-container {
-    max-width: 600px;
-    margin: 0 auto;
-    margin-bottom: 15%;
-    padding: 50px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-}
-
-.formcontainer h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-textarea {
-    resize: vertical;
-}
-
-button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-.home .btn-consult a {
-    position: relative;
-    width: 180px;
-    height: 48px;
-    display: inline-flex;
-    background: #17206D;
-    border-radius: 40px;
-    font-size: 19px;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    text-align: center;
-    font-weight: normal;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn-consult {
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
 
 
-/* footer */
-/* .container{
-    background-color: #bbbeff;
-    margin: auto;
-    width: 100%;
-    padding: 40px;
-}
-.row{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.row ul{
-    list-style-type: none;
-}
-
-.footer {
-    background-color:#bbbeff;
-    box-sizing: border-box;
-}
-.footer-col{
-    width: 25%;
-    padding: 0 15px;
-}
-.footer-col h4{
-    font-size: 17px;
-    color: #000000;
-}
-.footer-col p{
-    font-size: 12px;
-    color: black;
-    text-align: center;
-}
-.footer-col img{
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    display: block;
-}
-.social-links{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-} */
 
 .footer {
     position: absolute;
@@ -772,7 +436,6 @@ button:hover {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    /* Set your desired background color here */
     border-radius: 35%;
 }
 
